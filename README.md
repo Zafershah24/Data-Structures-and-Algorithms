@@ -6,4 +6,6 @@
 Uses of Pointers(lies in Stack memory)-                                                                                                                                                                           
   1)Accessing Heap memory(use malloc to access Heap mem)                                                                                                                          
   2)Accessing other external Resources                                                                                                                                                  
-  3)Parameter Passing
+  3)Parameter Passing                                                                                                                                                                                     
+  
+ REFERANCE IS A ALIAS GIVEN TO A VARIABLE
