@@ -8,4 +8,4 @@ Uses of Pointers(lies in Stack memory)-
   2)Accessing other external Resources                                                                                                                                                  
   3)Parameter Passing                                                                                                                                                                                     
   
- REFERANCE IS A ALIAS GIVEN TO A VARIABLE (USE & OF REFERENCING)
+ REFERANCE IS AN ALIAS GIVEN TO A VARIABLE (USE & OF REFERENCING)
