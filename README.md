@@ -4,6 +4,6 @@
 
 
 Uses of Pointers(lies in Stack memory)-
-  1)Accessing Heap memory
+  1)Accessing Heap memory(use malloc to access Heap mem)                                                                                                                          
   2)Accessing other external Resources
   3)Parameter Passing
