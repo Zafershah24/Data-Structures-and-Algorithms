@@ -1,9 +1,10 @@
 #include<stdio.h>
 
-void Swap(int *x,int *y){
+void Swap(int *x,int *y)  //x & y stores the addresses of a & b
+{               
 
     int temp ;
-    temp=*x;
+    temp=*x;                //*x is used in order to refer back to value of a , instead of address of a
     *x=*y;
     *y=temp;
 }
@@ -12,8 +13,8 @@ void Swap(int *x,int *y){
 int a,b;
 a=12;
 b=3;
-Swap(&a,&b);
-printf("%d  %d",a,b); //values are not changed as actual parameters are not affected by formal parameters
+Swap(&a,&b);  //returns adrees of a & b
+printf("%d  %d",a,b); //values are changed as actual parameters are  affected by formal parameters
  
 
 }
