@@ -1,4 +1,4 @@
-#Using POINTERS
+
 
 #include<iostream>
 using namespace std;
