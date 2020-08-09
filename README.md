@@ -8,4 +8,10 @@ Uses of Pointers(lies in Stack memory)-
   2)Accessing other external Resources                                                                                                                                                  
   3)Parameter Passing                                                                                                                                                                                     
   
- REFERANCE IS AN ALIAS GIVEN TO A VARIABLE (USE & OF REFERENCING)
+ REFERANCE IS AN ALIAS GIVEN TO A VARIABLE (USE & OF REFERENCING)                                                                                                             
+ 
+ 
+ 
+ **Array as Parameter**                                                                                                                                                                                       
+ ![pointerasParameter](https://user-images.githubusercontent.com/32811341/89731548-95eb4f80-da65-11ea-8622-4f3f560b5380.png)
+
