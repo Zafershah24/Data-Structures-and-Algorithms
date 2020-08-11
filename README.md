@@ -10,7 +10,7 @@ Uses of Pointers(lies in Stack memory)-
   
  REFERANCE IS AN ALIAS GIVEN TO A VARIABLE (USE & OF REFERENCING) //Used in C++ only  
  
- ##Call by Addrees uses arrow operator and Call by value uses dot operator 
+ ### Call by Addrees uses arrow operator and Call by value uses dot operator 
  
  
  
