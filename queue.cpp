@@ -71,7 +71,7 @@ public:
     return (rear-frnt+1);
     }
     void display(){
-    for( int i=0;i<4;i++)
+    for( int i=frnt;i<rear+1;i++)
         cout<<a[i]<<endl;
     }
     int see(int pos) {
