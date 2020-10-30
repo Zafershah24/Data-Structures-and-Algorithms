@@ -17,10 +17,12 @@ int main()
         
     }
     cout<<"Values of your array"<<endl;
-    for(int i=0;i<n;i++)
+      for(int i=0;i<n;i++)
     {
-        cout<<ptr[i];
+        cout<<ptr[i]<<endl;
         
     }
+    
+    delete[] ptr;
     return 0;
 }
