@@ -24,5 +24,6 @@ int main()
     }
     
     delete[] ptr;
+    
     return 0;
 }
