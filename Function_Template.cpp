@@ -10,8 +10,5 @@ int main() {
     cout<<add<float>(3.4f,7.6f)<<endl;
     cout<<add<double>(3.43,7.44)<<endl;
     cout<<add<int>(3,7)<<endl;
-    
-    
-
     return 0;
 }
