@@ -4,6 +4,7 @@
 // Change rear ++ to (rear=rear+1)%sizeofarray  (in EnQueue Operation)
 // Change frnt ++ to (frnt=frntr+1)%sizeofarray  (in DeQueue Operation)
 //And in IsFull Method (rear+1)%sizeofarray==frnt
+// Count Method changes a bit
 
 
 using namespace std;
@@ -12,6 +13,7 @@ class CircularQueue {
 int a[4];
 int frnt;
 int rear;
+int itemCnt;
 
 public:
 
@@ -20,6 +22,7 @@ public:
     {
         frnt=-1;
         rear=-1;
+        itemCnt=0
         for(int i=0;i<4;i++)
         {
             a[i]=0;
@@ -41,15 +44,18 @@ public:
     void enqueue(int val){
         if (IsFull()){
             cout<<"queue is Full"<<endl;
+           return;
         }
         else if (IsEmp()){
             rear=frnt=0;
             a[rear]=val;
+           itemCnt++;
 
         }
         else{
             rear=(rear+1)%4;
             a[rear]=val;
+           itemCnt++;
         }
     }
     int dequeue(){
@@ -62,6 +68,7 @@ public:
        popV = a[frnt];
       rear = -1;
       frnt = -1;
+      itemCnt--;
       return popV;
     }
 
@@ -69,12 +76,13 @@ public:
          popV=a[frnt];
         a[frnt]=0;
         frnt=(frnt+1)%4;
+        itemCnt--;
 //        cout<<frnt<<endl;
         return popV;
         }
             }
     int count(){
-    return (rear-frnt+1);
+    return (itemCnt);
     }
     void display(){
     for( int i=0;i<4;i++)
