@@ -10,7 +10,7 @@ int main()
     cout<<"enter the size of the array"<<endl;
     cin>>n;
     ptr=new int[n];
-    cout<<"enter the size of your array"<<endl;
+    cout<<"enter the values of your array"<<endl;
     for(int i=0;i<n;i++)
     {
         cin>>ptr[i];
@@ -23,7 +23,8 @@ int main()
         
     }
     
-    delete[] ptr;
+    
+    delete[] ptr; //to release your memory
     
     return 0;
 }
