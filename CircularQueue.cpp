@@ -1,9 +1,11 @@
 #include<iostream>
 #include <cstdlib>
 
-// Change rear ++ to (rear=rear+1)%sizeofarray
-// Change frnt ++ to (frnt=frntr+1)%sizeofarray
-//And in IsFull Method (rear+1)%4==frnt
+// Change rear ++ to (rear=rear+1)%sizeofarray  (in EnQueue Operation)
+// Change frnt ++ to (frnt=frntr+1)%sizeofarray  (in DeQueue Operation)
+//And in IsFull Method (rear+1)%sizeofarray==frnt
+
+
 using namespace std;
 
 class CircularQueue {
