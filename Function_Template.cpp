@@ -12,3 +12,20 @@ int main() {
     cout<<add<int>(3,7)<<endl;
     return 0;
 }
+
+
+////////////////////////
+#include <iostream>
+#include<string>
+using namespace std;
+
+template <class t>
+t add(t a,t b)
+{return a+b;
+    
+}
+
+int main() {
+cout<<add(8,9);
+
+}
