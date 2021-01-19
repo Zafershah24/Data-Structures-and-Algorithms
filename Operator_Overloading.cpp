@@ -54,3 +54,42 @@ int main() {
 
     return 0;
 }
+/******************************************************************************
+
+ANOTHER IMPLEMENTATION OF Operator_Overloading
+                              
+
+*******************************************************************************/
+
+#include <iostream>
+#include<string>
+using namespace std;
+
+class Length{
+    private:
+    int length;
+    public:
+    Length(){}
+    Length(int l){
+        length=l;
+    }
+    void disp(){
+        cout<<" length :"<<length<<endl;
+    }
+    
+    //operator overloading
+ Length operator-(Length &l2){
+     return length- l2.length;
+     
+ }
+};
+
+int main(){
+   Length r(7); 
+ r.disp();
+ Length c(9);
+ Length d;
+ d=r-c;
+ d.disp();
+    
+}
