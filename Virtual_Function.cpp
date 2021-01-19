@@ -51,20 +51,20 @@ class Enemy{
    
 public:
 
-virtual void attaccPower(){};
+virtual void attaccPower(int x){};
 };
 
 class Ninja:public Enemy{
 public:
- void attaccPower(){
-     cout<<"Ninja Chops -"<<endl;
+ void attaccPower(int a){
+     cout<<"Ninja Chops -"<<a<<endl;
  }
 };
 
 class Monster:public Enemy{
 public:
-  void attaccPower(){
-     cout<<"Monster Eats -"<<endl;
+  void attaccPower(int b){
+     cout<<"Monster Eats -"<<b<<endl;
  }
 };
 
@@ -75,7 +75,8 @@ Enemy *e1;
 Enemy *e2;
 e1=&n;;
 e2=&m;
-e1->attaccPower();
-e2->attaccPower();
+e1->attaccPower(4);
+e2->attaccPower(34);
 
 }
+
