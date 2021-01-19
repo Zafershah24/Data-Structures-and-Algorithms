@@ -1,6 +1,10 @@
 /******************************************************************************
 A CLASS CONTAINING PURE VIRTUAL FUNCTION IS AN ABSTRACT CLASS
 
+PURE VIRTUAL FUNCTION IS A VERY STRICT VERSION OF VIRTUAL FUNCTION.
+
+PURE VIRTUAL FUNCTION HAS NO FUNCTION BODY OR NO FUNCTION IMPLEMENTATION
+
 *******************************************************************************/
 
 #include <iostream>
