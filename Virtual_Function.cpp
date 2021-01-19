@@ -34,3 +34,48 @@ int main() {
 
     return 0;
 }
+
+
+
+/******************************************************************************
+Virtual Functions
+CALL SAME FUNCTIONS BUT HAVE DIFFERENT RESULTS
+
+*******************************************************************************/
+
+#include <iostream>
+#include<string>
+using namespace std;
+
+class Enemy{
+   
+public:
+
+virtual void attaccPower(){};
+};
+
+class Ninja:public Enemy{
+public:
+ void attaccPower(){
+     cout<<"Ninja Chops -"<<endl;
+ }
+};
+
+class Monster:public Enemy{
+public:
+  void attaccPower(){
+     cout<<"Monster Eats -"<<endl;
+ }
+};
+
+int main() {
+Ninja n;
+Monster m;
+Enemy *e1;
+Enemy *e2;
+e1=&n;;
+e2=&m;
+e1->attaccPower();
+e2->attaccPower();
+
+}
