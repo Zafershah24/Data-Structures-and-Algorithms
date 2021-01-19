@@ -29,3 +29,50 @@ int main( ) {
    printWidth( box );
    return 0;
 }
+
+
+/******************************************************************************
+
+              NEW FRIEND FUNCTION IMPLEMENTATION
+
+*******************************************************************************/
+
+#include <iostream>
+#include<string>
+using namespace std;
+
+class Rectangle{
+    private:
+    int length;
+    int breadth;
+    public:
+     Rectangle()
+    {
+       
+    }
+    Rectangle(int l,int b)
+    {
+        length=l;
+        breadth=b;
+    }
+    void disp(){
+        cout<<"length :"<<length<<endl;
+        cout<<"breadth :"<<breadth<<endl;
+    }
+    
+    friend void SetAnother(Rectangle r);
+};
+void SetAnother(Rectangle r){
+    r.length=7;
+    r.breadth=99;
+    cout<<"new length :"<<r.length<<endl;
+     cout<<"new breadth :"<<r.breadth<<endl;
+}
+
+int main(){
+   Rectangle r(7,8); 
+   r.disp();
+   SetAnother(r);
+  
+    
+}
