@@ -1,3 +1,8 @@
+/******************************************************************************
+A CLASS CONTAINING PURE VIRTUAL FUNCTION IS AN ABSTRACT CLASS
+
+*******************************************************************************/
+
 #include <iostream>
 using namespace std;
 
